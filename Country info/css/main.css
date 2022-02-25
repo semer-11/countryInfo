@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,200;1,300&family=PT+Sans+Narrow&family=Playfair+Display&family=Quicksand:wght@300&family=Quintessential&family=Raleway:wght@300;600&family=Roboto:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e3f5f6;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quintessential', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+::placeholder {
+    color: white;
+    padding: 35%;
+}
+
+.whole-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.body-container {
+    padding-bottom: 50px;
+}
+
+.country-img img {
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #1b1d1d, 2px -2px 5px #444949;
+}
+
+.empty {
+    text-align: center;
+    color: red;
+    margin: auto;
+    margin-top: 10px;
+    display: none;
+}
+
+.container {
+    display: none;
+}
+
+.error {
+    display: none;
+    height: 50vh;
+    margin: auto;
+    margin-top: 35%;
+}
+
+.credit {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    width: 100%;
+    background-color: #7f999b;
+}
+
+.credit h4 {
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+}
+
+.error h3 {
+    display: block;
+    margin: 15px;
+    font-size: 15px;
+    color: red;
+    text-align: center;
+}
+
+.error img {
+    margin: auto;
+}
+
+#intro h4 {
+    text-align: center;
+}
+
+.time-zone {
+    word-break: break-all;
+}
+
+.red {
+    color: rgba(255, 2, 2, 0.801);
+}
+
+.credit a {
+    text-decoration: none;
+    font-size: 10px;
+    color: #116a6e;
+}
+
+@media screen and (max-width:780px) {
+    .country-img {
+        width: 95%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .country-img img {
+        width: 95%;
+        margin: auto;
+    }
+    .country-detail {
+        margin: auto;
+        margin-left: 35px;
+    }
+    .country-detail h4 {
+        font-size: 20px;
+    }
+    .search {
+        width: 95%;
+        height: 45px;
+        border-radius: 10px;
+        margin: auto;
+        box-shadow: 2px 2px 5px black;
+    }
+    .search button,
+    input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+    .search input {
+        padding-left: 15px;
+        width: 80%;
+        height: 100%;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        background-color: cornflowerblue;
+    }
+    .search button {
+        margin: 0;
+        width: 15%;
+        position: relative;
+        right: 5px;
+    }
+}
+
+.search {
+    width: 100%;
+}

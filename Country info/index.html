@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Country Info</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <link rel="icon" href="./images/icon.jpg">
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="./js/main.js"></script>
+    </head>
+
+    <body>
+        <div class="whole-container">
+            <div class="body-container">
+                <div class="search">
+                    <input type="text" id="cname" placeholder="Country Name">
+
+                    <button onclick="trigger()" id="search">Search</button>
+                </div>
+                <span class="empty" id="empty">Empty Field Please Enter Something</span>
+                <div class="error" id="error">
+                    <img src="./images/error.png" alt="">
+                    <h3 id="errormessage"></h3>
+                </div>
+                <div class="first" id="intro">
+                    <div class="country-img">
+                        <img src="/images/discover2.png" alt="">
+                    </div>
+                    <h4>Search by Entering any United Nation Member Country Name</h4>
+                </div>
+                <div class="container" id="container">
+                    <div class="country-img">
+                        <img id="flag" src="" alt="">
+                    </div>
+
+                    <div class="country-detail">
+                        <h4 class="name" id="name">
+                            Federal Democratic Republic of Ethiopia <br> የኢትዮጵያ ፌዴራላዊ ዲሞክራሲያዊ ሪፐብሊክ
+                        </h4>
+                        <h4 class="continent">
+                            Continent : <span id="continent"></span> | <span id="sub"></span>
+                        </h4>
+                        <h4 class="area">
+                            Area : <span id="area"></span> Km<sup>2</sup>
+                        </h4>
+                        <h4 class="capital">
+                            Capital City : <span id="capital"></span>
+                        </h4>
+                        <!-- 
+        
+                            <h4 class="language">
+                                Language: Amharic ,Afaan Oromo
+                            </h4>
+                        -->
+                        <h4 class="population">
+                            Population: <span id="population"></span>
+                        </h4>
+                        <!-- 
+        
+                                <h4 class="currency">
+                                    Currency: <span id="currency"></span>
+                                </h4>
+                            -->
+                        <!-- 
+        
+                                <h4 class="calling">
+                                    Calling Code:+251
+                                </h4>
+                            -->
+                        <h4 class="time-zone">
+                            Time Zone : <span id="timeZone"></span>
+                        </h4>
+
+                    </div>
+                </div>
+            </div>
+            <div class="credit">
+                <h4>
+
+                    Made By <span class="red"> Semer Nur </span> with &#10084;&#65039;
+                    <br> <a href="https://restcountries.com/">Powered By RestCountries Api</a>
+                </h4>
+            </div>
+        </div>
+
+    </body>
+
+</html>
